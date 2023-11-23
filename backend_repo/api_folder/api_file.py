@@ -9,12 +9,9 @@ def index():
 
 
 @api.get("/predict")
-def predict(feature1, feature2):
+def predict(feature1, feature2, feature3):
 
     # model = picle.load_model()
     # prediction = model.predict(feature1, feature2)
 
-    # Here, I'm only returning the features, since I don't actually have a model.
-    # In a real life setting, you would return the predictions.
-
-    return {'prediction': int(feature1)*int(feature2)}
+    return {'prediction': int(float(feature1)*float(feature2)*float(feature3))}
