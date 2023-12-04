@@ -6,11 +6,11 @@ FROM python:3.8.6-buster
 # Here, we will include our api_folder and the requiremenets.txt file
 COPY backend_repo/api_folder / backend_repo/api_folder/
 COPY frontend_repo/ / frontend_repo/
-COPY requiremenets.txt / requiremenets.txt/
+COPY requirements/ / requirements/
 # RUN allows you to run terminal commands when your image gets created
 # Here, we upgrade pip and install the libraries in our requirements.txt
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements/requirements.txt
 
 
 
