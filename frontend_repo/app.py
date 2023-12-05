@@ -12,7 +12,7 @@ input3 = st.number_input("Mittlere Windgeschwindigkeit", value=0.0)
 
 #param2 = st.slider('Select another number', 1, 10, 3)
 
-url = 'http://localhost:8000/predict'
+url = 'http://0.0.0.0:8123/predict'
 
 params = {
     'feature1': input1,  # 0 for Sunday, 1 for Monday, ...
