@@ -4,8 +4,8 @@ FROM python:3.10.6-buster
 
 # COPY allows you to select the folders and files to include in your docker image
 # Here, we will include our api_folder and the requiremenets.txt file
-COPY backend_repo/api_folder /backend_repo/api_folder/
-COPY frontend_repo/ /frontend_repo/
+COPY backend/api_folder /backend/api_folder/
+COPY frontend/ /frontend/
 COPY requirements.txt /requirements.txt
 # RUN allows you to run terminal commands when your image gets created
 # Here, we upgrade pip and install the libraries in our requirements.txt
